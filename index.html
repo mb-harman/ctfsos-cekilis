@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF SOS Çekiliş v2.1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <header id="main-header" class="hidden-on-load">
+        <div class="header-left">
+            <button id="refresh-btn" title="İsimleri Güncelle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+            </button>
+            <span id="participant-counter" class="counter-text"></span>
+            <span id="toast-message" class="toast-text"></span>
+        </div>
+
+        <div class="logo-container" id="logo-container">
+            <img src="https://via.placeholder.com/100x100/111/fff?text=SOS" alt="CTF SOS Logo" id="club-logo">
+            <h1 id="main-title" class="hidden-on-load">CTF SOS Hediye Kitap Çekilişi</h1>
+        </div>
+    </header>
+
+    <main id="main-stage" class="hidden-on-load">
+        <button id="start-btn" class="premium-btn">Başla</button>
+        <div id="raffle-stage" class="hidden">
+            <div id="asil-container" class="box-container"></div>
+            <div id="yedek-container" class="box-container yedek-row"></div>
+        </div>
+    </main>
+
+    <footer id="signature" class="hidden-on-load">
+        v2.1 - İştiyakla ve Heyecânla Tasarlandı - MBH
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
