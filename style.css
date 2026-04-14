@@ -21,7 +21,8 @@ body {
 }
 
 /* Şov Başlangıç Gizliliği */
-.hidden-on-load { opacity: 0; pointer-events: none; transition: opacity 1.5s ease; }
+.hidden-on-load { opacity: 0 !important; filter: blur(10px); pointer-events: none; }
+#main-header, #main-stage, #signature { transition: opacity 1.5s ease, filter 1.5s ease; opacity: 1; filter: blur(0); }
 
 header {
     width: 100%; padding-top: 30px; display: flex;
@@ -41,11 +42,15 @@ header {
 /* Sinematik Logo Hareketi */
 .logo-container {
     display: flex; flex-direction: column; align-items: center; gap: 15px;
-    transform: translateY(35vh) scale(1.5); /* Sahnenin ortasında başlar */
-    transition: all 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+    opacity: 0; /* Başlangıçta karanlıkta gizli */
+    transform: translateY(20vh) scale(1.1); /* Ortada başlar */
+    transition: opacity 1.2s ease, transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.logo-container.fade-in { opacity: 1; } /* Karanlıktan aydınlığa çıkar */
+.logo-container.moved { transform: translateY(0) scale(1); } /* Yukarı kayar */
 }
 .logo-container.moved { transform: translateY(0) scale(1); /* Yukarı kayar */ }
-#club-logo { width: 100%; max-width: 800px; height: 35vh; object-fit: contain; }
+#club-logo { max-width: 350px; max-height: 150px; object-fit: contain; }
 h1 { font-weight: 200; font-size: 2.2rem; margin-bottom: 40px; letter-spacing: 5px; text-transform: uppercase; color: rgba(255,255,255,0.9); text-align: center; }
 
 main { flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; }
