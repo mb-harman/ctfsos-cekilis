@@ -93,5 +93,5 @@ main { flex-grow: 1; display: flex; flex-direction: column; align-items: center;
     100% { box-shadow: 0 0 35px rgba(255, 165, 0, 0.5); transform: scale(1.07); }
 }
 
-footer { position: absolute; bottom: 20px; font-size: 0.95rem; font-weight: 200; color: rgba(255,255,255,0.4);
+footer { position: absolute; bottom: 20px; font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.4); letter-spacing: 3px; transition: color 0.3s ease; }
 footer:hover { color: rgba(255,255,255,0.6); text-shadow: 0 0 10px rgba(255,255,255,0.3); }
