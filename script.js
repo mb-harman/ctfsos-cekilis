@@ -23,7 +23,7 @@ let participants = [];
 let boxes = []; 
 
 // 1. Sinematik Açılış Şovu
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         logoContainer.classList.add('moved'); // Logoyu yukarı gönder
         setTimeout(() => {
