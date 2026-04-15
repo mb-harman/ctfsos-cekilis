@@ -91,8 +91,6 @@ main { flex-grow: 1; display: flex; flex-direction: column; align-items: center;
     100% { box-shadow: 0 0 35px rgba(255, 165, 0, 0.5); transform: scale(1.07); }
 }
 
-#club-logo { max-width: 350px; max-height: 150px; object-fit: contain; } /* İdeal logo boyutu */
-
 /* Aşağıdan Yukarı Süzülme Animasyonu */
 .slide-up {
     opacity: 0;
