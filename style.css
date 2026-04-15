@@ -38,12 +38,8 @@ header {
 .hide { opacity: 0 !important; pointer-events: none; }
 .show { opacity: 1 !important; pointer-events: auto; }
 
-/* Sinematik Logo Hareketi */
 .logo-container {
     display: flex; flex-direction: column; align-items: center; gap: 15px;
-    opacity: 0; /* Başlangıçta karanlıkta gizli */
-    transform: translateY(20vh) scale(1.1); /* Ortada başlar */
-    transition: opacity 1.2s ease, transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 }
 .logo-container.moved { transform: translateY(0) scale(1); /* Yukarı kayar */ }
