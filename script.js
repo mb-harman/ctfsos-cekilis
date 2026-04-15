@@ -22,29 +22,9 @@ const yedekContainer = document.getElementById('yedek-container');
 let participants = [];
 let boxes = []; 
 
-// 1. Sinematik Açılış Şovu
-// 1. Sinematik Açılış Şovu
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Sahne: Karanlık ekran, 0.5 saniye sonra logo usulca ortada belirir
-    setTimeout(() => {
-        logoContainer.classList.add('fade-in');
-
-        // 2. Sahne: Logo 1.5 saniye ortada asılı kalır ve kendini gösterir, sonra yukarı kayar
-        setTimeout(() => {
-            logoContainer.classList.add('moved');
-
-            // 3. Sahne: Logo yukarı kayarken (0.4 sn sonra) buton ve başlık blur'dan çıkar
-            setTimeout(() => {
-                mainHeader.classList.remove('hidden-on-load');
-                mainStage.classList.remove('hidden-on-load');
-                signature.classList.remove('hidden-on-load');
-
-                createBoxes(); 
-                fetchNames();  
-            }, 400);
-
-        }, 1500); 
-    }, 500);
+    createBoxes();
+    fetchNames(); // Site açıldığı gibi ilk veriyi otomatik çeker
 });
 
 // 2. Kutuları Matematiksel Olarak Çizme
