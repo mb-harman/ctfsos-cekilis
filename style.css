@@ -21,7 +21,6 @@ body {
 }
 
 /* Şov Başlangıç Gizliliği */
-.hidden-on-load { opacity: 0 !important; filter: blur(10px); pointer-events: none; }
 #main-header, #main-stage, #signature { transition: opacity 1.5s ease, filter 1.5s ease; opacity: 1; filter: blur(0); }
 
 header {
@@ -46,8 +45,6 @@ header {
     transform: translateY(20vh) scale(1.1); /* Ortada başlar */
     transition: opacity 1.2s ease, transform 1.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
-.logo-container.fade-in { opacity: 1; } /* Karanlıktan aydınlığa çıkar */
-.logo-container.moved { transform: translateY(0) scale(1); } /* Yukarı kayar */
 }
 .logo-container.moved { transform: translateY(0) scale(1); /* Yukarı kayar */ }
 #club-logo { max-width: 350px; max-height: 150px; object-fit: contain; }
@@ -96,6 +93,22 @@ main { flex-grow: 1; display: flex; flex-direction: column; align-items: center;
 @keyframes pulse-orange {
     0% { box-shadow: 0 0 15px rgba(255, 165, 0, 0.2); transform: scale(1.05); }
     100% { box-shadow: 0 0 35px rgba(255, 165, 0, 0.5); transform: scale(1.07); }
+}
+
+#club-logo { max-width: 350px; max-height: 150px; object-fit: contain; } /* İdeal logo boyutu */
+
+/* Aşağıdan Yukarı Süzülme Animasyonu */
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUpFade 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+.delay-1 { animation-delay: 0.1s; } /* Logo için hafif gecikme */
+.delay-2 { animation-delay: 0.3s; } /* Başlık için biraz daha gecikme */
+.delay-3 { animation-delay: 0.5s; } /* Buton ve İmza için son gecikme */
+
+@keyframes slideUpFade {
+    to { opacity: 1; transform: translateY(0); }
 }
 
 footer { position: absolute; bottom: 20px; font-size: 0.95rem; font-weight: 300; color: rgba(255,255,255,0.4); letter-spacing: 3px; transition: color 0.3s ease; }
