@@ -7,9 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <header id="main-header" class="hidden-on-load">
+<header id="main-header" class="slide-up">
         <div class="header-left">
             <button id="refresh-btn" title="İsimleri Güncelle">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -22,24 +20,24 @@
             <span id="toast-message" class="toast-text"></span>
         </div>
 
-        <div class="logo-container" id="logo-container">
+        <div class="logo-container slide-up delay-1" id="logo-container">
             <img src="kulup-logo-cekilis.webp" alt="CTF SOS Logo" id="club-logo">
         </div>
     </header>
 
-    <main id="main-stage" class="hidden-on-load">
-        <h1 id="main-title" class="hidden-on-load">CTF SOS Hediye Kitap Çekilişi</h1>
-        <button id="start-btn" class="premium-btn">Başlat</button>
+    <main id="main-stage">
+        <h1 id="main-title" class="slide-up delay-2">CTF SOS Hediye Kitap Çekilişi</h1>
+        
+        <button id="start-btn" class="premium-btn slide-up delay-3">Başlat</button>
+        
         <div id="raffle-stage" class="hidden">
             <div id="asil-container" class="box-container"></div>
             <div id="yedek-container" class="box-container yedek-row"></div>
         </div>
     </main>
 
-    <footer id="signature" class="hidden-on-load">
+    <footer id="signature" class="slide-up delay-3">
         v2.3.2 - İştiyakla ve Heyecânla Tasarlandı - MBH
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
