@@ -24,7 +24,6 @@ let boxes = [];
 
 document.addEventListener('DOMContentLoaded', () => {
     createBoxes();
-    fetchNames(); // Site açıldığı gibi ilk veriyi otomatik çeker
 });
 
 // 2. Kutuları Matematiksel Olarak Çizme
