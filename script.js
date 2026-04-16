@@ -3,7 +3,7 @@ const ASIL_KISI_SAYISI = 10;
 const YEDEK_KISI_SAYISI = 2;
 const BEKLEME_SURESI = 3000; // Kutular arası 5 saniye heyecan payı (Milisaniye)
 // ⚠️ E-TABLO CSV LİNKİNİ BURAYA YAPIŞTIR ⚠️
-const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTCuzwcG2SFiri0zAhNsXygs1NC2x3s3wvqtqxH4bbPAV7krckXqCahA5hy3TJu24bjbzS2v7yYfNTc/pub?gid=2112475833&single=true&output=csv'; 
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS9h43P3t2jx5t0eBKkahDn3JMCNu98V1ybajVSAT332P71XwW5lViNuRnvpC9nt5G5AAkgsBvpN6_I/pub?gid=1293538611&single=true&output=csv'; 
 // -----------------------------------------------------------------
 
 const logoContainer = document.getElementById('logo-container');
